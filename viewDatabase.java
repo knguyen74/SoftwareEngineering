@@ -34,7 +34,7 @@ public class viewDatabase {
         }
         System.out.println("");
         rs2.close();
-        /*
+        
         ResultSet rs3 = stat.executeQuery("select * from FLIGHTS;");
         System.out.println("FLIGHTS table");
         while (rs3.next()) 
@@ -46,7 +46,7 @@ public class viewDatabase {
         System.out.println("");
         rs3.close();
            
-        */
+        
         ResultSet rs4 = stat.executeQuery("select * from TICKETS;");
         System.out.println("TICKETS table");
         while (rs4.next()) 
@@ -69,9 +69,6 @@ public class viewDatabase {
         System.out.println("");
         rs4.close();
         conn.close();
-        
-        CreditCardValidation test = new CreditCardValidation("378923552443936","americanexpress");
-        System.out.println(test.isValid());
 	}
 
 }
