@@ -34,7 +34,7 @@ public class viewDatabase {
         }
         System.out.println("");
         rs2.close();
-        
+        /*
         ResultSet rs3 = stat.executeQuery("select * from FLIGHTS;");
         System.out.println("FLIGHTS table");
         while (rs3.next()) 
@@ -45,7 +45,7 @@ public class viewDatabase {
         }
         System.out.println("");
         rs3.close();
-           
+        */   
         
         ResultSet rs4 = stat.executeQuery("select * from TICKETS;");
         System.out.println("TICKETS table");

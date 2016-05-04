@@ -10,7 +10,8 @@ public class removeCoupon
 		Class.forName("org.sqlite.JDBC");
         Connection conn = DriverManager.getConnection("jdbc:sqlite:ECHO.db");
         Statement stat = conn.createStatement();
-        stat.executeUpdate("DELETE from COUPONS where CODE=\""+code+"\";");
+        stat.executeUpdate("DELETE from COUPONS where CODE= \""+code+"\";");
+        stat.close();
         conn.close();
 	}
 

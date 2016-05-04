@@ -24,11 +24,12 @@ public class removeExpiredCoupons
         {
         	if(rs.getLong("EXPIRATION_DATE")<Long.parseLong(present))
         	{
-        		removeCoupon Expired = new removeCoupon(rs.getString("CODE"));
+                stat.executeUpdate("DELETE from COUPONS WHERE CODE = \""+rs.getString("CODE")+"\";");
         	}
         }
         System.out.println("");
         rs.close();	
+        stat.close();
         conn.close();
 	}
 }
